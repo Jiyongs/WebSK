@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Your First WebSocket!</title>
+</head>
+<body>
+
+<h1 style="text-align: center;">Hello World WebSocket Client</h1>
+<br>
+<div style="text-align: center;">
+    <form action="">
+        <!-- 유저 명을 입력하는 텍스트 박스(기본 값은 anonymous(익명)) -->
+        <input id="user" type="text" value="jy">
+        <input onclick="send_message()" value="Send" type="button">
+        <input id="msg" name="message" value="Hello WebSocket!" type="text"><br>
+        <input onclick="disconnect()" value="DisConnect" type="button">
+    </form>Connected to Endpoint!
+</div>
+<div id="output"></div>
+</body>
+
+<script type="text/javascript" src="index.js"></script>
+</html>
